@@ -1,0 +1,11 @@
+{
+  "name": "korsim",
+  "version": "1.0.0",
+  "description": "Plataforma auxiliar de cursos de extensão.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ageu Assunção Simões Galindo",
+  "license": "ISC"
+}
