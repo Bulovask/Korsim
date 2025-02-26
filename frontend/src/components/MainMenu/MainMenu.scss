@@ -1,0 +1,36 @@
+.MainMenu {
+  all: unset;
+  
+  background-color: var(--bg2);
+  border-right: 5px solid var(--fg2);
+  box-shadow: 2px 2px 2px #0008;
+  color: var(--fg2);
+  margin-top: -5px;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  width: max-content;
+  height: 100vh;
+  padding: 40px 40px 10px 20px;
+  transition: transform 500ms;
+
+  .closeBtn {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.MainMenu.hide {
+  transition: transform 500ms;
+  transform: translateX(-105%);
+}

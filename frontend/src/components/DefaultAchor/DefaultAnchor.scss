@@ -1,0 +1,15 @@
+a.DefaultAnchor[data-disabled] {
+  display: none;
+}
+
+span.DefaultAnchor[data-disabled] {
+  display: inline;
+}
+
+a.DefaultAnchor, a.DefaultAnchor[data-disabled=false] {
+  display: inline;
+}
+
+span.DefaultAnchor, span.DefaultAnchor[data-disabled=false]  {
+  display: none;
+}

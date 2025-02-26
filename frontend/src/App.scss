@@ -1,3 +1,11 @@
-h1 {
-  @apply text-5xl text-center text-blue-700;
+:root {
+  --fg1: #000;
+  --fg2: #fff;
+  --bg1: #ccc;
+  --bg2: #333;
+  --bg3: #aaa;
+
+  --fontsize: 20px;
+
+  font-size: var(--fontsize);
 }

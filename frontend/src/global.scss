@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+section {
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 30px;
+
+}
+
+h2 {
+  font-size: 25px;
+}
+
+input {
+  color: #000;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 15px;
+  width: 36ch;
+}
