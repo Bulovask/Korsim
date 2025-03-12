@@ -1,0 +1,60 @@
+
+
+.CourseMain {
+  position: relative;
+  background-color: var(--bg1);
+  color: var(--fg1);
+  fill: var(--fg1);
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 10px;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 1px 1px 5px var(--bg2);
+    border-radius: 5px;
+    background-color: hsl(from var(--bg2) h s 70%);
+    padding: 5px;
+    gap: 5px;
+
+    .content {
+      @apply border-0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg1);
+      box-shadow: 1px 1px 5px var(--bg2);
+      color: var(--fg1);
+      gap: 1px;
+      padding: .5rem;
+      box-sizing: border-box;
+
+      & {
+        box-shadow: none;
+        padding: 0 0 0 1ch;
+        margin: 1px;
+      }
+
+      .title {
+        flex-grow: 1;
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+
+    .DefaultButton {
+      all: unset;
+      color: var(--fg1);
+      border: none;
+      text-align: left;
+    }
+
+    .DefaultButton:hover {
+      filter: brightness(75%);
+    }
+  }
+}

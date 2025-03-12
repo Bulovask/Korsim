@@ -1,0 +1,67 @@
+
+
+.ProfileMain {
+  position: relative;
+  background-color: var(--bg1);
+  color: var(--fg1);
+  fill: var(--fg1);
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+
+  .inscriptions, .matriculations {
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 1px 1px 5px var(--bg2);
+    border-radius: 5px;
+    background-color: hsl(from var(--bg2) h s 70%);
+    padding: 5px;
+
+    .inscription, .matriculation {
+      @apply border-0;
+      position: relative;
+      display: flex;
+      background-color: var(--bg1);
+      box-shadow: 1px 1px 5px var(--bg2);
+      color: var(--fg1);
+      gap: 5px;
+      padding: 1rem .5rem .5rem .5rem;
+      box-sizing: border-box;
+
+      .course {
+        flex-grow: 1;
+        text-align: right;
+      }
+
+      .date {
+        font-size: 0.6rem;
+        position: absolute;
+        left: 0.5rem;
+        top: 0.3rem;
+        filter: contrast(49%);
+      }
+    }
+
+    :is(.inscription, .matriculation):hover {
+      filter: brightness(75%);
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .my-column h2 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ProfileMain {
+    grid-template-columns: 1fr;
+  }
+}

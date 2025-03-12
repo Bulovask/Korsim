@@ -14,7 +14,7 @@ function MainMenu({mainMenu}) {
       <div className='container'>
         <DefaultButton type='link' to='/' onClick={closeMenu}>Página Inicial</DefaultButton>
         <DefaultButton type='link' to='/perfil' onClick={closeMenu}>Perfil</DefaultButton>
-        <DefaultButton type='link' to='/perfil' onClick={closeMenu}>Perfil</DefaultButton>
+        <DefaultButton type='link' to='/curso' onClick={closeMenu}>Curso</DefaultButton>
         <DefaultButton type='link' to='/perfil' onClick={closeMenu}>Perfil</DefaultButton>
         <DefaultButton type='link' to='/perfil' onClick={closeMenu}>Perfil</DefaultButton>
       </div>

@@ -1,5 +1,8 @@
 .MainHeader {
   all: unset;
+  position: sticky;
+  top: 0;
+  
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -16,6 +19,22 @@
     font-size: 1.25rem;
   }
 
+  animation: zindex 1ms ease;
+  animation-timeline: scroll();
+}
+
+@keyframes zindex {
+  from {
+    z-index: 1;
+  }
+
+  0.001% {
+    z-index: 2;
+  }
+
+  to {
+    z-index: 2;
+  }
 }
 
 .MenuIcon {

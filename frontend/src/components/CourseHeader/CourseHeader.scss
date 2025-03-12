@@ -1,6 +1,6 @@
 
 
-.ProfileHeader {
+.CourseHeader {
   position: relative;
   background-color: var(--bg2);
   color: var(--fg2);
@@ -24,12 +24,8 @@
     padding-left: 10px;
     justify-content: center;
 
-    .nickname {
-      font-size: 1.3rem;
-    }
-
     .name {
-      font-size: 0.8rem;
+      font-size: 1.25rem;
     }
   }
   

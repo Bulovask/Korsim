@@ -11,7 +11,6 @@ function Home() {
       <h3>Não perca a oportunidade de progredir em seus estudos!</h3>
       <p>dsf</p>
       <section>
-
       </section>
 
       <h2></h2>
