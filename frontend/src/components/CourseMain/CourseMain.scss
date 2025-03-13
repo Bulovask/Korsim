@@ -13,6 +13,7 @@
   gap: 10px;
 
   .contents {
+    position: relative;
     display: flex;
     flex-direction: column;
     box-shadow: inset 1px 1px 5px var(--bg2);
@@ -46,15 +47,25 @@
       }
     }
 
+    .content .content::before {
+      content: '';
+      position: absolute;
+      width: 3px;
+      background-color: var(--bg2);
+      margin-left: -10px;
+      height: 100%;
+    }
+
     .DefaultButton {
       all: unset;
       color: var(--fg1);
       border: none;
       text-align: left;
+      background-color: var(--bg1);
     }
 
     .DefaultButton:hover {
-      filter: brightness(75%);
+      background-color: #8888;
     }
   }
 }

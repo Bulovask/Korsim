@@ -1,27 +1,34 @@
 import './CourseMain.scss'
 import DefaultButton from '../DefaultButton/DefaultButton.jsx'
+import { useState } from 'react'
 
 function Content({ content }) {
-  const getCourseInscriptionUrl = id => `/inscricao/${id}`
+  const getCourseActivityUrl = id => `/atividade/${id}`
+  const [showContent, setShowContent] = useState(true)
 
   if (content.type == 'folder') return (
     <div className='content'>
       <DefaultButton
+        onClick={() => setShowContent(!showContent)}
         type='button'>
+          
         <span className='title'>{content.title}</span>
       </DefaultButton>
-      {content.contents?.map(contentChildren => (
-        <Content key={contentChildren.id} content={contentChildren} />
-      ))}
+      <div style={{display: showContent ? 'block' : 'none'}}>
+        {content.contents?.map(contentChildren => (
+          <Content key={contentChildren.id} content={contentChildren} />
+        ))}
+      </div>
     </div>
   )
   else return (
-    <DefaultButton
-      className='content'
-      type='link'
-      to={getCourseInscriptionUrl(content.id)}>
-      <span className='title'>{content.title}</span>
-    </DefaultButton>
+    <div className='content'>
+      <DefaultButton
+        type='link'
+        to={getCourseActivityUrl(content.id)}>
+        <span className='title'>{content.title}</span>
+      </DefaultButton>
+    </div>
   )
 }
 
